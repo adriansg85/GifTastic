@@ -1,0 +1,20 @@
+#button-area {
+    height: 50px;
+    width: 50px;
+    background: yellowgreen;
+    display: none;
+}
+
+#form-area {
+    height: 50px;
+    width: 50px;
+    background: blueviolet;
+    display: none;
+}
+
+#display-area {
+    height: 50px;
+    width: 50px;
+    background: red;
+    display: none;
+}
