@@ -1,20 +1,63 @@
-#button-area {
-    height: 50px;
-    width: 50px;
-    background: yellowgreen;
-    display: none;
+#custom-navbar {
+    background: rgb(170, 31, 31);
 }
 
-#form-area {
-    height: 50px;
-    width: 50px;
-    background: blueviolet;
-    display: none;
+#logo {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
 }
 
-#display-area {
+li #active-link {
+    background: rgb(142, 97, 97);
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+li #non-active-link {
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+li .active-pill {
+    background: rgb(196, 99, 99);
+    color: white;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li .non-active-pill {
+    background: rgb(235, 235, 235);
+    color: rgb(97, 97, 97);
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.caption {
+    text-align: center;
+}
+
+#logo,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+.nav-link,
+.input-group {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 12px;
+    color: #ccc;
+    text-align: center;
+    background: rgb(170, 31, 31);
     height: 50px;
-    width: 50px;
-    background: red;
-    display: none;
+    font-family: 'Noto Sans', sans-serif;
 }

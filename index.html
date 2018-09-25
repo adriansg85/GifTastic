@@ -9,18 +9,144 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/styles.css" />
-
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Ubuntu" rel="stylesheet">
 </head>
 
 <body>
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-default navbar-fixed-top navbar-collapse" id="custom-navbar">
+        <div class="container-fluid">
+            <!-- Logo Area -->
+            <div class="navbar-header">
+                <!-- Main Logo and Name -->
+                <a class="navbar-brand" id="logo" href="#">GifTastic</a>
+                <!-- Buttons for toggle -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- Links Area -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="active-link" href="#">Game</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="non-active-link" href="#">Read Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <!-- Bootstrap Grid Area -->
+    <div class="container-fluid">
+        <div class="row content">
+            <!-- Left Section -->
+            <div class="col-sm-3 sidenav">
+                <!-- Left Input Area -->
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search-gif" placeholder="Add Gifs..">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button" id="plus-button">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                    </span>
+                </div>
+                <br>
+                <!-- Left Button Area -->
+                <div>
+                    <ul class="nav nav-pills nav-stacked" id="append-pills">
+                        <!-- <li id='list-pill'>
+                            <a id="pill-button" class="non-active-pill" href="#">
+                                Test
 
-    <button id="start-button">Click to fade in boxes</button><br><br>
-    <div id="button-area"></div><br>
-    <div id="form-area"></div><br>
-    <div id="display-area"></div><br>
+                            </a>
+                            <a id="pill-button" class="non-active-pill" href="#">
+                                Test
+                                <button type="button" class="close" aria-label="Close">
+                                    <span aria-hidden="false">&times;</span>
+                                </button>
+
+                            </a>
+
+                        </li> -->
+                    </ul><br>
+                </div>
+                <div class="bottom">
+                    <button type="button" class="btn btn-warning" style="width:100%" id="reset-button">Reset</button>
+                </div>
+
+            </div>
+            <!-- Right Display Area -->
+            <div class="col-sm-9" id="displayArea">
+                <h4><small>Gif Results</small></h4>
+                <hr>
+                <!-- Animated Gif Area -->
+                <div id="gifResults">
+                    <h2>Birds</h2>
+                    <div class="row" id='1stRow'>
+
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="/w3images/lights.jpg">
+                                    <img src="https://media.giphy.com/media/l2YWEBgHVhmBDoEq4/giphy.gif" class="img-rounded"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>BIRDS GIF BY DARIUS RUCKER</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a href="/w3images/lights.jpg">
+                                    <img src="https://media.giphy.com/media/l2YWEBgHVhmBDoEq4/giphy.gif" class="img-rounded"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>BIRDS GIF BY DARIUS RUCKER</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="thumbnail">
+                                <a id='tagCaption' href="/w3images/lights.jpg">
+                                    <img src="https://media.giphy.com/media/l2YWEBgHVhmBDoEq4/giphy.gif" class="img-rounded"
+                                        alt="Lights" style="width:100%">
+                                    <div class="caption">
+                                        <p>BIRDS GIF BY DARIUS RUCKER</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Last Gif thumbnail -->
+                    </div>
+                    <!-- Animated Gif END -->
+                </div>
+            </div>
+            <!-- Right Display END -->
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="container">
+        <footer class="fixed-bottom">
+
+            <p>Adrian's Giftastic &copy;</p>
+
+        </footer>
+    </div>
 
 </body>
 
+<!-- Required Scripts -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="assets/javascript/app.js"></script>
